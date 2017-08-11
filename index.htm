@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>Babylon - 3D Game Engine</title>
+    <!-- link to the last version of babylon -->
+    <script src="babylon.custom.js"></script>
+    <script src="main.js"></script>
+    <style>
+        * {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: #383838;
+            color: #acacac;
+        }
+
+        #sceneWindow {
+            width: 50%;
+            height: 50%;
+        }
+
+        #gameWindow {
+            width: 50%;
+            height: 50%;
+            top: 50%;
+        }
+
+        canvas {
+            height: calc(100% - 1.5rem);
+            top: 1.5rem;
+            touch-action: none;
+        }
+
+        label {
+            max-width: 100px;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            text-align: left;
+        }
+
+        .tabBase {
+            height: 1.5rem;
+            background-color: #292929;
+        }
+
+        .tabLabel {
+            position: relative;
+            transform: translate(-50%, -50%);
+            border: 0.25rem solid #383838;
+            border-top-left-radius: 15%;
+            border-top-right-radius: 15%;
+        }
+
+        .borderWindow {
+            border: 0.25rem ridge #292929;
+        }
+
+        #hierarchyWindow {
+            width: calc(50% / 3);
+            left: 50%;
+        }
+
+        #projectWindow {
+            width: calc(50% / 3);
+            left: calc(50% + 50% / 3);
+        }
+
+        #inspectorWindow {
+            width: calc(50% / 3);
+            left: calc(50% + 50% / 3 * 2);
+        }
+
+        select {
+            height: 1.5rem;
+            top: 1.5rem;
+        }
+
+        #fileSelect {
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <select id="fileSelect">
+            <option>File</option>
+        </select>
+    </div>
+
+    <div id="sceneWindow" class="borderWindow">
+        <div class="tabBase">
+            <label class="tabLabel">Scene</label>
+        </div>
+        <canvas id="sceneCanvas"></canvas>
+    </div>
+
+    <div id="gameWindow" class="borderWindow">
+        <div class="tabBase">
+            <label class="tabLabel">Game</label>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <div id="hierarchyWindow" class="borderWindow">
+        <div class="tabBase">
+            <label class="tabLabel">Hierarchy</label>
+        </div>
+        <select id="hierarchySelect">
+            <option>Create</option>
+        </select>
+    </div>
+
+    <div id="projectWindow" class="borderWindow">
+        <div class="tabBase">
+            <label class="tabLabel">Project</label>
+        </div>
+        <select id="projectSelect">
+            <option>Create</option>
+        </select>
+    </div>
+
+    <div id="inspectorWindow" class="borderWindow">
+        <div class="tabBase">
+            <label class="tabLabel">Inspector</label>
+        </div>
+        <select id="inspectorSelect">
+            <option>Create</option>
+        </select>
+    </div>
+</body>
+
+</html>

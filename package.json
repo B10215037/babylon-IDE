@@ -1,0 +1,14 @@
+{
+  "name": "just for the main.ts(traget) compiling to main.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^2.4.2"
+  }
+}
