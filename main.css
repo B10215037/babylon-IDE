@@ -1,0 +1,73 @@
+* {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #383838;
+    color: #acacac;
+}
+
+.menu {
+    height: 1.5rem;
+}
+
+.borderWindow {
+    border: 0.25rem ridge #292929;
+}
+
+#sceneWindow, #gameWindow {
+    width: 50%;
+    height: calc(50% - 1.5rem / 2);
+}
+
+canvas {
+    height: calc(100% - 1.5rem);
+}
+
+.tabBase {
+    height: 1.5rem;
+    background-color: #292929;
+}
+
+.tabLabel {
+    max-width: 100px;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    border: 0.25rem solid #383838;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+}
+
+#hierarchyWindow {
+    top: calc(-100% + 1.5rem);
+    left: 50%;
+    width: calc(50% / 3);
+    height: calc(100% - 1.5rem);
+}
+
+#projectWindow {
+    top: calc(-200% + 3rem);
+    left: calc(50% + 50% / 3);
+    width: calc(50% / 3);
+    height: calc(100% - 1.5rem);
+}
+
+#inspectorWindow {
+    top: calc(-300% + 4.5rem);
+    left: calc(50% + 50% / 3 * 2);
+    width: calc(50% / 3);
+    height: calc(100% - 1.5rem);
+}
+
+select {
+    height: 1.5rem;
+}
